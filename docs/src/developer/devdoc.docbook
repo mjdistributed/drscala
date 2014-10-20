@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+                    "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+  <!ENTITY mdash "&#x02014;" >
+  <!ENTITY introduction SYSTEM "introduction.docbook">
+  <!ENTITY gettingStarted SYSTEM "gettingStarted.docbook">
+  <!ENTITY supportingTechnology SYSTEM "supportingTechnology.docbook">
+  <!ENTITY bestPractices SYSTEM "bestPractices.docbook">
+  <!ENTITY systemArchitecture SYSTEM "systemArchitecture.docbook">
+  <!ENTITY projectAdministration SYSTEM "projectAdministration.docbook">
+]>
+
+<!--
+  Developer Documentation for DrJava
+  
+  Each chapter is separated into its own file.  This should only be edited to change
+  the date, title, etc., or add/reorganize chapters.
+  
+  @version $Id: devdoc.docbook 4971 2009-08-03 21:26:37Z mgricken $
+-->
+
+<book id="index">
+  <!-- Meta info -->
+  <bookinfo>
+    <date>2009-07-03</date>
+    <title>DrJava Developer Documentation</title>
+  </bookinfo>
+  <toc></toc>
+  
+  &introduction;
+  &gettingStarted;
+  &supportingTechnology;
+  &bestPractices;
+  &systemArchitecture;
+  &projectAdministration;
+  
+</book>

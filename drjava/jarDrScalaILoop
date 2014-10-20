@@ -1,0 +1,11 @@
+#! /bin/bash
+
+# If edu/rice/cs/drjava/model/repl/newjvm/DrScalaILoop.scala is modified, 
+# run this script before building to ensure that the new version is jarred
+# and placed in the 'lib' directory.
+
+rm -rf drScalaILoop_bin
+mkdir drScalaILoop_bin
+scalac -cp classes/base -d drScalaILoop_bin src/edu/rice/cs/drjava/model/repl/newjvm/DrScalaILoop.scala
+jar -cvf lib/drScalaILoop.jar -C drScalaILoop_bin edu
+rm -rf drScalaILoop_bin
